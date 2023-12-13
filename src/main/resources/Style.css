@@ -1,0 +1,26 @@
+.lightMode{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+.darkMode{
+    -fx-background-color: dark #2d2d2d;
+    -fx-text-fill: white;
+}
+.clientBackground{
+    -fx-background-color: white;
+}
+
+.startBackground{
+    -fx-background-color: #0482a2;
+}
+
+.clientButton {
+    -fx-background-radius: 80;
+}
+
+.serverButton {
+    -fx-background-radius: 80;
+}
+.textField{
+    -fx-background-radius: 80;
+}

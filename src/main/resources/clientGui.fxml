@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="background" prefHeight="670.0" prefWidth="440.0" styleClass="clientBackground" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <children>
+        <TextField fx:id="sendTextfield" alignment="CENTER" layoutX="21.0" layoutY="514.0" prefHeight="43.0" prefWidth="294.0" promptText="Enter Text Here" styleClass="textField" stylesheets="@Style.css">
+            <font>
+                <Font size="20.0" />
+            </font></TextField>
+        <Button fx:id="sendButton" layoutX="321.0" layoutY="516.0" mnemonicParsing="false" onAction="#sendAll" prefHeight="43.0" prefWidth="82.0" styleClass="clientButton" text="Send All">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Button>
+        <ListView fx:id="listItems2" layoutX="77.0" layoutY="58.0" prefHeight="419.0" prefWidth="347.0" style="-fx-background-radius: 10;" />
+        <TextField fx:id="privateMessage" alignment="CENTER" layoutX="14.0" layoutY="618.0" prefHeight="43.0" prefWidth="302.0" promptText="Enter Text Here" styleClass="textField" stylesheets="@Style.css">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TextField>
+        <Button fx:id="sendPrivButton" layoutX="321.0" layoutY="618.0" mnemonicParsing="false" onAction="#setSendButton" prefHeight="43.0" prefWidth="82.0" styleClass="clientButton" text="Send">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Button>
+      <TitledPane collapsible="false" layoutX="14.0" layoutY="58.0" prefHeight="419.0" prefWidth="56.0" style="-fx-background-radius: 10;" text="Active&#10;clients">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="32.0">
+               <children>
+                  <ListView fx:id="activeClients" layoutX="-1.0" prefHeight="376.0" prefWidth="56.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <Button fx:id="themeButton" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" onAction="#changeTheme" prefHeight="46.0" prefWidth="56.0" text="Dark&#10;Mode" />
+      <Text fx:id="text1" layoutX="183.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Messages" wrappingWidth="134.5">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="text2" layoutX="118.0" layoutY="502.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Send to all clients">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="text3" layoutX="24.0" layoutY="583.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&#9;&#9;&#9;Send Private Message&#10;Type &quot;at (client#)&quot; to send private or group message">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
